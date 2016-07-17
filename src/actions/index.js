@@ -1,22 +1,14 @@
-let nextTodoId = 0
-export const addTodo = (text) => {
+let sum = 0;
+export const addTodo = () => {
   return {
     type: 'ADD_TODO',
-    id: nextTodoId++,
+    sum: sum++
+  };
+};
+
+export const inputTodo = (text) => {
+  return {
+    type: 'INPUT_TODO',
     text
-  }
-}
-
-export const setVisibilityFilter = (filter) => {
-  return {
-    type: 'SET_VISIBILITY_FILTER',
-    filter
-  }
-}
-
-export const toggleTodo = (id) => {
-  return {
-    type: 'TOGGLE_TODO',
-    id
-  }
-}
+  };
+};

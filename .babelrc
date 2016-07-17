@@ -4,5 +4,9 @@
     "development": {
       "presets": ["react-hmre"]
     }
-  }
+  },
+  "plugins": [
+    "transform-es2015-parameters",
+    "transform-object-rest-spread"
+  ]
 }
